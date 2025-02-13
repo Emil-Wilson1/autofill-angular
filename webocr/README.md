@@ -1,53 +1,59 @@
-# Image Text Extraction and Search in Angular using Tesseract.js
+# Webocr
 
-This project is an Angular-based application that performs text extraction from images using the Tesseract.js OCR engine. It also allows users to search for specific text within the extracted text, highlight the searched term, and count its occurrences.
+This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.1.4.
 
-## Demo
-Check out the live demo [here]().
+## Development server
 
-## Features
-- Upload an image for text extraction
-- Extract text from the uploaded image using Tesseract.js
-- Search for specific text within the extracted content
-- Highlight the searched term
-- Display the number of occurrences of the searched term
+To start a local development server, run:
 
-## Prerequisites
-Ensure you have Angular CLI installed and an Angular project set up.
-
-### Setting up a New Angular Project
 ```bash
-npm install -g @angular/cli
-ng new my-app
-cd my-app
-ng serve --open
+ng serve
 ```
 
-## Install Dependencies
+Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+
+## Code scaffolding
+
+Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+
 ```bash
-npm install bootstrap
-npm install tesseract.js
+ng generate component component-name
 ```
 
-## Component Structure
-### HTML Code
-The HTML code in image-to-text.component.html provides the user interface for uploading images, entering search text, displaying extracted text, and showing search results.
+For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
 
-### TypeScript Code
-The core logic for file selection, OCR processing, and text searching is handled in the `image-to-text.component.ts` file.
+```bash
+ng generate --help
+```
 
-### Highlight Pipe
-A custom Angular pipe is created to highlight the searched text within the extracted text.
+## Building
 
-## Usage
-- Upload an image using the file input
-- The text is extracted automatically using Tesseract.js
-- Enter the text to search in the provided input box and click on the search button
-- The application highlights the searched text and displays the count of occurrences
+To build the project run:
 
-## Conclusion
-This application provides a simple and efficient way to extract text from images and perform text searches on the extracted content, all within an Angular frontend.
+```bash
+ng build
+```
 
----
+This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
 
+## Running unit tests
 
+To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
+
+```bash
+ng test
+```
+
+## Running end-to-end tests
+
+For end-to-end (e2e) testing, run:
+
+```bash
+ng e2e
+```
+
+Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
+
+## Additional Resources
+
+For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
